@@ -19,6 +19,7 @@ This repository contains Power BI dashboards I have built using real-world datas
 This report analyses a B2B CRM sales pipeline to uncover win rate trends, revenue performance, product effectiveness, and individual sales manager contribution. The goal was to give a sales leadership team a single source of truth for monitoring pipeline health and identifying where deals are being won or lost.
 
 ---
+<img width="1321" height="732" alt="image" src="https://github.com/user-attachments/assets/50ab69bf-3cd0-4d96-80a2-00af5eab2b67" />
 
 ### Page 1 — Pipeline Performance Overview
 
@@ -52,6 +53,9 @@ This report analyses a B2B CRM sales pipeline to uncover win rate trends, revenu
 Page 1 shows overall pipeline trends — but averages can be misleading. A sales agent with a **60% win rate** may be generating significantly more revenue than an agent with an **80% win rate**, simply because they are closing higher-value deals.
 
 Relying on win rate alone to evaluate performance gives an incomplete picture. This page was built to show both metrics side by side — so leadership can make fairer, more informed decisions about agent performance rather than ranking people on a single number.
+
+<img width="485" height="717" alt="image" src="https://github.com/user-attachments/assets/3e36b8fd-ae16-44d8-adae-bf6e96678095" />
+
 
 #### Key Insights
 
