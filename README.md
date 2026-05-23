@@ -8,37 +8,73 @@ This repository contains Power BI dashboards I have built using real-world datas
 
 ### 1. CRM Sales Opportunities Analysis
 
-**Dataset:** Maven Analytics — CRM Sales Opportunities  
+**Dataset:** data.world -CRM Sales Opportunities  
 **Tool:** Power BI Desktop  
 **Pages:** 2
 
----**Overview**
+---
+
+#### Overview
 
 This report analyses a B2B CRM sales pipeline to uncover win rate trends, revenue performance, product effectiveness, and individual sales manager contribution. The goal was to give a sales leadership team a single source of truth for monitoring pipeline health and identifying where deals are being won or lost.
 
-<img width="1320" height="743" alt="image" src="https://github.com/user-attachments/assets/3689b933-734f-4eb6-80d6-69f56034b71f" />
+---
 
-
-
+### Page 1 — Pipeline Performance Overview
 
 #### Key Insights
 
-- Overall win rate is 63.15% across the full pipeline with 4,238 won deals 
-  generating $10.01M in total revenue
+- Overall win rate is **63.15%** across the full pipeline with **4,238 won deals** generating **$10.01M in total revenue**
 
-- Win rate declined from 82% in Q1 2017 to 60.25% by Q4 2017 — a clear 
-  downward trend that signals a need for pipeline review
+- Win rate **declined from 82% in Q1 2017 to 60.25% by Q4 2017** — a clear downward trend that signals a need for pipeline review
 
-- Melvin Marxen leads all sales managers with 882 won deals, followed 
-  closely by Summer Sewald at 828
+- **Melvin Marxen** leads all sales managers with **882 won deals**, followed closely by Summer Sewald at 828
 
-- Mg Special has the highest win rate by product at 64.84%, outperforming 
-  all other product lines
+- **Mg Special** has the highest win rate by product at **64.84%**, outperforming all other product lines
 
-- Regional filters allow leadership to slice performance by Central, East 
-  and West office
+- Regional filters allow leadership to slice performance by **Central, East and West** office to compare regional contribution
 
-  #### Data Model
+<img width="1322" height="742" alt="image" src="https://github.com/user-attachments/assets/68cdb2ae-e7ef-436a-b1cb-4ffccfa5376d" />
+
+
+#### Visuals Used
+
+- **KPI Cards** — Won Deals, Total Revenue, Win Rate %
+- **Line Chart** — Win Rate % trend by Year-Quarter
+- **Bar Chart** — Won Deals by Sales Manager
+- **Bar Chart** — Win Rate % by Product
+- **Pie Chart** — Deal stage distribution (Won, Lost, Engaging, Prospecting)
+- **Slicers** — Regional Office, Year-Quarter
+
+---
+
+### Page 2 — Sales Agent Performance Breakdown
+
+#### Why I Built This Page
+
+Page 1 shows overall pipeline trends — but averages can be misleading. A sales agent with a **60% win rate** may be generating significantly more revenue than an agent with an **80% win rate**, simply because they are closing higher-value deals.
+
+Relying on win rate alone to evaluate performance gives an incomplete picture. This page was built to show both metrics side by side — so leadership can make fairer, more informed decisions about agent performance rather than ranking people on a single number.
+
+#### Key Insights
+
+- **Darcel Schlecht** generates the highest total revenue at **$773,129** despite not having the highest win rate — confirming that win rate alone does not tell the full story
+
+- **Maureen Marcano** achieves an **81.25% win rate** but lower total revenue — suggesting she closes more deals at lower values
+
+- **Rosalina Dieter** stands out with an **83.33% win rate** — the highest in the table — making her the most consistent closer by percentage
+
+- <img width="627" height="771" alt="image" src="https://github.com/user-attachments/assets/901371b0-0fe3-488d-9939-6cc0bd232534" />
+
+
+#### Visuals Used
+
+- **Table visual** — Sales Agent, Total Revenue, Win Rate %, Top Product
+- Sorted by Total Revenue descending to surface highest value agents first
+
+---
+
+#### Data Model
 
 The report is built across 5 related tables:
 
@@ -51,10 +87,10 @@ The report is built across 5 related tables:
 | `Date Table` | Custom date table built in DAX |
 
 ---
-  
-**DAX Measures & Calculations**:
 
-1. **Custom Date Table** — built from scratch to enable time intelligence functions:
+#### DAX Measures & Calculations
+
+**Custom Date Table** — built from scratch to enable time intelligence functions:
 
 ```dax
 Date Table = 
@@ -71,7 +107,7 @@ ADDCOLUMNS(
 )
 ```
 
-Creating a proper date table is essential for time intelligence in Power BI. Without it, functions like PREVIOUSQUARTER() will not work correctly.
+> Creating a proper date table is essential for time intelligence in Power BI. Without it, functions like PREVIOUSQUARTER() will not work correctly.
 
 ---
 
@@ -124,14 +160,8 @@ RETURN
 
 ---
 
-#### Visuals Used
 
-- **KPI Cards** — Won Deals, Total Revenue, Win Rate %
-- **Line Chart** — Win Rate % trend by Year-Quarter
-- **Bar Chart** — Won Deals by Sales Manager
-- **Bar Chart** — Win Rate % by Product
-- **Pie Chart** — Deal stage distribution (Won, Lost, Engaging, Prospecting)
-- **Slicers** — Regional Office, Year-Quarter
 
----
 
+
+*Dataset source: [Maven Analytics](https://mavenanalytics.io)*
