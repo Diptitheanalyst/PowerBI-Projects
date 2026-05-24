@@ -160,13 +160,6 @@ RETURN
 
 ---
 
-#### Files
 
-| File | Description |
-|---|---|
-| `CRM_Sales_Opportunities.pbix` | Power BI report file |
-| `CRM_Sales_Opportunities.pdf` | PDF export of the report |
-
----
 
 *Dataset source: [Maven Analytics](https://mavenanalytics.io)*
