@@ -1,4 +1,4 @@
-# ✈️ Airline Flight Delays Analysis — Power BI
+# ✈️ Airline Flight Delays Analysis - Power BI
 
 ## 📌 Overview
 Analysis of 5.7M+ US domestic flights in 2015 to identify delay patterns, cancellation reasons, and airline reliability.
@@ -17,29 +17,29 @@ Analysis of 5.7M+ US domestic flights in 2015 to identify delay patterns, cancel
 - 37.10% of flights experienced a departure delay in 2015
 - Average delay time was 33 minutes per delayed flight
 - June had the highest delay rate at 43.53%
-- Boston (BOS) peaked in February at 56.34% — highest single month delay rate
+- Boston (BOS) peaked in February at 56.34% - highest single month delay rate
 
 **Cancellations**
-- 89,884 flights cancelled — just 2% of all scheduled flights
+- 89,884 flights cancelled - just 2% of all scheduled flights
 - Weather was the leading cause at 54% of cancellations
 - Airline/Carrier responsible for 28.11%
 
 **Airline Reliability**
-- Most reliable: Alaska Airlines — 75.04% on-time departure
-- Least reliable: United Airlines — 50.90% on-time departure
+- Most reliable: Alaska Airlines - 75.04% on-time departure
+- Least reliable: United Airlines- 50.90% on-time departure
 
 ---
 
 ## 🛠️ Tools & Skills
-- Power BI Desktop — report building and visualisations
-- Power Query — data transformation and cleaning
-- DAX — calculated measures
-- Data Modelling — star schema (4 tables)
+- Power BI Desktop - report building and visualisations
+- Power Query - data transformation and cleaning
+- DAX - calculated measures
+- Data Modelling - star schema (4 tables)
 
 ---
 
 ## ⚠️ Data Notes
-- Boston (BOS) October data absent from source dataset — verified in Power Query
+- Boston (BOS) October data absent from source dataset - verified in Power Query
 - TAXI_IN values appear uniformly recorded, so taxi analysis was excluded
 
 ---
